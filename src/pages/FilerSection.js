@@ -7,13 +7,12 @@ import { constructUrl } from '../utils/helper';
 const FilterSection = (props) => {
     const history = useHistory();
     const location = useLocation();
-    const [selectedButtons, setSelectedButtons] = useState({});
+    const [selectedButtonConfig, setSelectedButtonConfig] = useState({});
     const buttonCLickHandler = (id, filterName) => {
         let params = queryString.parse(location.search, { parseBooleans: true });
         params = { ...params, [filterName]: id };
         const newUrl = constructUrl('/', params);
-       if(JSON.stringify(selectedButtons)!==JSON.stringify(params))
-        setSelectedButtons({...params});
+        setSelectedButtonConfig({...params});
         history.push(newUrl);
     }
 
@@ -23,7 +22,11 @@ const FilterSection = (props) => {
         <>
 
             {sectionName}
-            {buttons.map(({ label, id }) => <ContainedButtons label={label} id={id} key={id} onClick={() => buttonCLickHandler(id, filterName)} />)}
+            {buttons.map(({ label, id }) => {
+            const isSelected = selectedButtonConfig[filterName]===id;
+            return(
+                <ContainedButtons label={label} id={id} key={id} isSelected={isSelected} onClick={() => buttonCLickHandler(id, filterName)} />
+            )})}
         </>
     )
 
