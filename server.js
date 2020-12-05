@@ -7,7 +7,7 @@ import { StaticRouter } from 'react-router';
 import { Helmet } from 'react-helmet';
 import App from './src/app';
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 console.log(process && process.env,"<---->",process && process.env && process.env.port)
 
