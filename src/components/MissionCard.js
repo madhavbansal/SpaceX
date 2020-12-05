@@ -34,34 +34,37 @@ const MissionCard = (props) => {
     mission_id,
     launch_year,
     launch_success,
-    successfulLanding,
-    mission_patch } = {} } = props;
+    cores,
+    mission_patch,
+    mission_patch_small } = {},
+    style } = props;
   const classes = useStyles();
   const missionIdList = getMissionIdList(mission_id);
+  const successfulLanding = !!(cores.length && cores[0].land_success)
   return (
 
-    <Card className={classes.root}>
+    <Card style={style}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={mission_patch}
+          image={mission_patch_small}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {mission_name}#{flight_number}
+            <div style={{ color: "purple", color: 'black' }}>{mission_name}#{flight_number}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {constants.missionIds}{missionIdList}
+            <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.missionIds}</div>{missionIdList}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {constants.launchYear}{launch_year}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.launchYear}</div>{launch_year}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {constants.successfulLaunch}{launch_success ? "true" : "false"}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.successfulLaunch}</div>{launch_success ? "true" : "false"}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {constants.successfulLanding}{successfulLanding ? "true" : "false"}
+            <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.successfulLanding}</div>{successfulLanding ? "true" : "false"}
           </Typography>
         </CardContent>
       </CardActionArea>

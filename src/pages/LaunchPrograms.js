@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fallback, MissionCard } from '../components';
 import { useLaunchData, useLoader } from '../customHooks';
+import * as styles from './LaunchPrograms.style';
 
 const LaunchPrograms = () => {
     const { loading, error, data } = useLaunchData();
@@ -9,7 +10,7 @@ const LaunchPrograms = () => {
         return loader;
     }
     if (error) {
-        return <Fallback/>
+        return <Fallback />
     }
 
     return (
@@ -22,9 +23,10 @@ const LaunchPrograms = () => {
                     launch_year,
                     launch_success,
                     successfulLanding = false,
-                    links: { mission_patch }
+                    rocket: { first_stage: { cores = [] } = {} } = {},
+                    links: { mission_patch, mission_patch_small }
 
-                }) => <MissionCard key={flight_number} data={{ mission_name, flight_number, mission_id, launch_year, launch_success, successfulLanding, mission_patch }} />)
+                }) => <MissionCard style={styles.style.card} key={flight_number} data={{ mission_name, flight_number, mission_id, launch_year, launch_success, successfulLanding, cores, mission_patch, mission_patch_small }} />)
             }
         </>
     )

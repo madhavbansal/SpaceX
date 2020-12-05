@@ -3,6 +3,7 @@ import { useLocation, useHistory } from "react-router-dom";
 import { ContainedButtons } from '../components';
 import queryString from 'query-string';
 import { constructUrl } from '../utils/helper';
+import * as styles from './FilterSection.style';
 
 const FilterSection = (props) => {
     const history = useHistory();
@@ -21,12 +22,14 @@ const FilterSection = (props) => {
     return (
         <>
 
-            {sectionName}
+            <div style={styles.style.text}>{sectionName}</div>
+            <div style={styles.style.button}>
             {buttons.map(({ label, id }) => {
             const isSelected = selectedButtonConfig[filterName]===id;
             return(
-                <ContainedButtons label={label} id={id} key={id} isSelected={isSelected} onClick={() => buttonCLickHandler(id, filterName)} />
+                <ContainedButtons style={styles.style.ContainedButtons} label={label} id={id} key={id} isSelected={isSelected} onClick={() => buttonCLickHandler(id, filterName)} />
             )})}
+            </div>
         </>
     )
 

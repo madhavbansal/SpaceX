@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContainedButtons = (props) => {
-    const { label, onClick, id, isSelected } = props;
+    const { label, onClick, id, isSelected,style } = props;
     const classes = useStyles();
     return (
-        <div className={classes.root}>
-            <Button variant="contained" onClick={onClick} color={isSelected ? "primary" : "default"}>{label}</Button>
+        <div>
+            <Button style={style} variant="contained" onClick={onClick} color={isSelected ? "primary" : "default"}>{label}</Button>
         </div>
     );
 }
