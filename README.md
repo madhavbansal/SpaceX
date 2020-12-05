@@ -5,7 +5,6 @@ This project provides you filtered data of launches done by SpaceX on the basis 
 
 
 
-
 In this project directory, you can run:
 
 ### Installation process
