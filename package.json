@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config ./jest-config.js",
     "webpack:server": "webpack --config webpack.server.js --watch",
     "webpack:client": "webpack --config webpack.client.js --watch",
     "webpack:start": "nodemon --watch build --exec node build/bundle.js",
@@ -20,6 +20,7 @@
     "@material-ui/core": "^4.11.1",
     "axios": "^0.21.0",
     "babel-cli": "^6.26.0",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -29,6 +30,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jest": "^26.6.3",
     "nodemon": "^2.0.6",
     "npm-run-all": "^4.1.5",
     "query-string": "^6.13.7",
@@ -37,6 +39,7 @@
     "react-helmet": "^6.1.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^17.0.1",
     "webpack": "^5.8.0",
     "webpack-cli": "^4.2.0",
     "webpack-node-externals": "^2.5.2"
