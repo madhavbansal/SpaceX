@@ -17,7 +17,7 @@ run npm start command
 
 ### Lighthouse Report
 
-![Lighthouse Report](https://github.com/madhavbansal/SpaceX/blob/main/lightHouseReport.png?raw=true Lighthouse Report")
+[![Lighthouse Report](https://github.com/madhavbansal/SpaceX/blob/main/lightHouseReport.png)](#Report)
 
 ### `npm start`
 
