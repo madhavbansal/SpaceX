@@ -10,7 +10,7 @@ const useLaunchData = () => {
     let params = queryString.parse(location.search, { parseBooleans: true });
     const newUrl = constructApiUrl(baseUrl, params);
 
-
+    
     const [options, setOptions] = useState({ loading: true, error: false, data: [] });
 
 

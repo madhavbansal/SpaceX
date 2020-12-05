@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+Array [
+  "Filters",
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "2006",
+            "label": "2006",
+          },
+          Object {
+            "id": "2007",
+            "label": "2007",
+          },
+          Object {
+            "id": "2008",
+            "label": "2008",
+          },
+          Object {
+            "id": "2009",
+            "label": "2009",
+          },
+          Object {
+            "id": "2010",
+            "label": "2010",
+          },
+          Object {
+            "id": "2011",
+            "label": "2011",
+          },
+          Object {
+            "id": "2012",
+            "label": "2012",
+          },
+          Object {
+            "id": "2013",
+            "label": "2013",
+          },
+          Object {
+            "id": "2014",
+            "label": "2014",
+          },
+          Object {
+            "id": "2015",
+            "label": "2015",
+          },
+          Object {
+            "id": "2016",
+            "label": "2016",
+          },
+          Object {
+            "id": "2017",
+            "label": "2017",
+          },
+          Object {
+            "id": "2018",
+            "label": "2018",
+          },
+          Object {
+            "id": "2019",
+            "label": "2019",
+          },
+          Object {
+            "id": "2020",
+            "label": "2020",
+          },
+        ],
+        "filterName": "launchYear",
+        "sectionName": "Launch Year",
+      }
+    }
+  />,
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "true",
+            "label": "True",
+          },
+          Object {
+            "id": "false",
+            "label": "False",
+          },
+        ],
+        "filterName": "sucessfulLaunch",
+        "sectionName": "Successful Launch",
+      }
+    }
+  />,
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "true",
+            "label": "True",
+          },
+          Object {
+            "id": "false",
+            "label": "False",
+          },
+        ],
+        "filterName": "sucessfulLanding",
+        "sectionName": "Successful Landing",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Test the Filter Component 1`] = `
+Array [
+  "Filters",
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "2006",
+            "label": "2006",
+          },
+          Object {
+            "id": "2007",
+            "label": "2007",
+          },
+          Object {
+            "id": "2008",
+            "label": "2008",
+          },
+          Object {
+            "id": "2009",
+            "label": "2009",
+          },
+          Object {
+            "id": "2010",
+            "label": "2010",
+          },
+          Object {
+            "id": "2011",
+            "label": "2011",
+          },
+          Object {
+            "id": "2012",
+            "label": "2012",
+          },
+          Object {
+            "id": "2013",
+            "label": "2013",
+          },
+          Object {
+            "id": "2014",
+            "label": "2014",
+          },
+          Object {
+            "id": "2015",
+            "label": "2015",
+          },
+          Object {
+            "id": "2016",
+            "label": "2016",
+          },
+          Object {
+            "id": "2017",
+            "label": "2017",
+          },
+          Object {
+            "id": "2018",
+            "label": "2018",
+          },
+          Object {
+            "id": "2019",
+            "label": "2019",
+          },
+          Object {
+            "id": "2020",
+            "label": "2020",
+          },
+        ],
+        "filterName": "launchYear",
+        "sectionName": "Launch Year",
+      }
+    }
+  />,
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "true",
+            "label": "True",
+          },
+          Object {
+            "id": "false",
+            "label": "False",
+          },
+        ],
+        "filterName": "sucessfulLaunch",
+        "sectionName": "Successful Launch",
+      }
+    }
+  />,
+  <FilterSection
+    sectionConfig={
+      Object {
+        "buttons": Array [
+          Object {
+            "id": "true",
+            "label": "True",
+          },
+          Object {
+            "id": "false",
+            "label": "False",
+          },
+        ],
+        "filterName": "sucessfulLanding",
+        "sectionName": "Successful Landing",
+      }
+    }
+  />,
+]
+`;
