@@ -15,6 +15,10 @@ run npm i command on terminal
 
 run npm start command
 
+###Lighthouse Report
+
+![Lighthouse Report](Screenshot from 2020-12-05 19-09-15.png?raw=true Lighthouse Report")
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
