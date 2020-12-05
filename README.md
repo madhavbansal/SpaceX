@@ -17,7 +17,7 @@ run npm start command
 
 ###Lighthouse Report
 
-![Lighthouse Report](Screenshot from 2020-12-05 19-09-15.png?raw=true Lighthouse Report")
+![Lighthouse Report](./Screenshot from 2020-12-05 19-09-15.png?raw=true Lighthouse Report")
 
 ### `npm start`
 
