@@ -9,6 +9,8 @@ import App from './src/app';
 const app = express();
 const port = process.env.port || 3000;
 
+console.log(process && process.env,"<---->",process && process.env && process.env.port)
+
 app.use(bodyParser.json());
 app.use(express.static('build/public'));
 
