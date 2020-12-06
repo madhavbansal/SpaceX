@@ -13,6 +13,7 @@ Clone the repo
 
 run npm i command on terminal
 
+
 run npm start command
 
 ### Lighthouse Report
