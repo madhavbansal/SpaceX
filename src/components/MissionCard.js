@@ -53,19 +53,19 @@ const MissionCard = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <div style={{ color: "purple" }}>{mission_name}#{flight_number}</div>
+            <div style={{ color: "#5d68a0" }}>{mission_name}#{flight_number}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.missionIds}</div>{missionIdList}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.missionIds}</div><div style={{color:'#5d68a0'}}>{missionIdList}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.launchYear}</div>{launch_year}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.launchYear}</div><div style={{color:'#5d68a0'}}>{launch_year}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.successfulLaunch}</div>{launch_success ? "true" : "false"}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.successfulLaunch}</div><div style={{color:'#5d68a0'}}>{launch_success ? "true" : "false"}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.successfulLanding}</div>{successfulLanding ? "true" : "false"}
+            <div style={{ fontWeight: 'bold', color: 'black' }}>{constants.successfulLanding}</div><div style={{color:'#5d68a0'}}>{successfulLanding ? "true" : "false"}</div> 
           </Typography>
         </CardContent>
       </CardActionArea>
