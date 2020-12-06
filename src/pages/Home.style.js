@@ -9,7 +9,7 @@ export const style = {
     marginLeft:'6px',
     marginRight:'5px',
     flexBasis:'15%',
-    height:'550px'
+    height:'fit-content'
    },
    LaunchPrograms:{
     flexWrap:'wrap',
