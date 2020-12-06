@@ -1,8 +1,8 @@
 export const style = { 
     card:{
-        padding:5,
-        marginTop:'10px',
-        marginBottom:'10px',
+        padding:'5px',
+        margin:'5px',
+        flexBasis:'20%'
         }
  
    };
