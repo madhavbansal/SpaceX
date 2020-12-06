@@ -49,11 +49,11 @@ const MissionCard = (props) => {
           className={classes.media}
           image={mission_patch_small}
           title="Contemplative Reptile"
-          style={{height: 'fit-content', paddingTop: '200px', backgroundColor:'lightgray'}}
+          style={{ backgroundSize: 'contain', padding: '50px', backgroundColor: 'lightgray' }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <div style={{ color: "purple"}}>{mission_name}#{flight_number}</div>
+            <div style={{ color: "purple" }}>{mission_name}#{flight_number}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.missionIds}</div>{missionIdList}
