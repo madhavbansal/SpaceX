@@ -1,4 +1,4 @@
-export const style = { 
+export const desktop = { 
     text:{
       borderBottom: '2px solid currentColor',
       textAlign: 'center',
@@ -17,3 +17,43 @@ export const style = {
         }
  
    };
+
+   export const tab = { 
+    text:{
+      borderBottom: '2px solid currentColor',
+      textAlign: 'center',
+      marginTop:'5px',
+      marginBottom:'5px'
+    },
+    button:{
+        display:'flex',
+        flexWrap:'wrap'
+    },
+    ContainedButtons:{
+        padding:5,
+        marginTop:'5px',
+        marginBottom:'5px',
+        marginLeft:'10px'
+        }
+ 
+   };   
+
+   export const mobile = { 
+    text:{
+      borderBottom: '2px solid currentColor',
+      textAlign: 'center',
+      marginTop:'5px',
+      marginBottom:'5px'
+    },
+    button:{
+        display:'flex',
+        flexWrap:'wrap'
+    },
+    ContainedButtons:{
+        padding:5,
+        marginTop:'5px',
+        marginBottom:'5px',
+        marginLeft:'10px'
+        }
+ 
+   };   

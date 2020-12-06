@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Filters, LaunchPrograms } from './index';
+import { useDevice } from '../customHooks'
 import { constants } from '../utils/constant';
 import * as styles from './Home.style';
 
 const Home = () => {
+    const deviceType = useDevice();
+    const style = styles[deviceType];
     return (
         <>
-            <div style={styles.style.text}>{constants.spaceXPrograms}</div>
-            <div style={styles.style.common}>
-            <div style={styles.style.filters}>
-            <Filters />
-            </div>
-            <div style={styles.style.LaunchPrograms}>
-            <LaunchPrograms />
-            </div>
+            <div style={style.text}>{constants.spaceXPrograms}</div>
+            <div style={style.common}>
+                <div style={style.filters}>
+                    <Filters/>
+                </div>
+                <div style={style.LaunchPrograms}>
+                    <LaunchPrograms/>
+                </div>
             </div>
         </>
     )

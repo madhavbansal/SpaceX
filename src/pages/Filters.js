@@ -11,7 +11,7 @@ const Filters = () => {
         <>
             <div style={styles.style.text}>{constants.filters}</div>
             <FilterSection sectionConfig={sectionConfig.launchYear} />
-            <FilterSection sectionConfig={sectionConfig.sucessfulLaunch} />
+            <FilterSection sectionConfig={sectionConfig.sucessfulLaunch}/>
             <FilterSection sectionConfig={sectionConfig.sucessfulLanding} />
 
         </>
