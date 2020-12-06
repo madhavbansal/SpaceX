@@ -52,7 +52,7 @@ const MissionCard = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            <div style={{ color: "purple", color: 'black' }}>{mission_name}#{flight_number}</div>
+            <div style={{ color: "purple"}}>{mission_name}#{flight_number}</div>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             <div style={{ fontWeight: 'bold', color: 'black' }}> {constants.missionIds}</div>{missionIdList}

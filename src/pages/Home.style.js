@@ -3,7 +3,7 @@ export const style = {
      fontWeight: 'bold'
    },
    filters:{
-    width: "300px",
+    width: "200px",
     margin: "30px auto",
     backgroundColor: "white",
     minHeight: "200px",
