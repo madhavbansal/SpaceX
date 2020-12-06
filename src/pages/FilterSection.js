@@ -27,7 +27,7 @@ const FilterSection = (props) => {
             {buttons.map(({ label, id }) => {
             const isSelected = selectedButtonConfig[filterName]===id;
             return(
-                <ContainedButtons style={styles.style.ContainedButtons} label={label} id={id} key={id} isSelected={isSelected} onClick={() => buttonCLickHandler(id, filterName)} />
+                <ContainedButtons style={{...styles.style.ContainedButtons,background:isSelected ? "#7bba02" : "#c5e09b"}} label={label} key={id} onClick={() => buttonCLickHandler(id, filterName)} />
             )})}
             </div>
         </>
