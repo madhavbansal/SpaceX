@@ -49,6 +49,7 @@ const MissionCard = (props) => {
           className={classes.media}
           image={mission_patch_small}
           title="Contemplative Reptile"
+          style={{height: 'fit-content', paddingTop: '200px', backgroundColor:'lightgray'}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
