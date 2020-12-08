@@ -13,7 +13,10 @@ export const desktop = {
         padding:5,
         marginTop:'5px',
         marginBottom:'5px',
-        marginLeft:'10px'
+        marginLeft:'10px',
+        buttonDiv:{
+          flexBasis:'50%'
+        }
         }
  
    };
@@ -33,7 +36,11 @@ export const desktop = {
         padding:5,
         marginTop:'5px',
         marginBottom:'5px',
-        marginLeft:'10px'
+        marginLeft:'10px',
+        buttonDiv:{
+          flexBasis:'50%'
+        }
+       
         }
  
    };   
@@ -53,7 +60,10 @@ export const desktop = {
         padding:5,
         marginTop:'5px',
         marginBottom:'5px',
-        marginLeft:'10px'
+        marginLeft:'10px',
+        buttonDiv:{
+          flexBasis:'50%'
+        }
         }
  
    };   

@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContainedButtons = (props) => {
-    const { label, onClick,style } = props;
+    const { label, onClick, style: { buttonDiv, ...style } } = props;
     const classes = useStyles();
     return (
-        <div>
+        <div style={buttonDiv}>
             <Button style={style} variant="contained" onClick={onClick}>{label}</Button>
         </div>
     );
